@@ -1,0 +1,47 @@
+.container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .containerTable {
+    width: 80%;
+    height: 350px;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;    
+  }
+
+  .title{
+    color: #8DC6D3;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .indonesia__subtitle{
+    font-family: Poppins, sans-serif;
+    color: #FFB9B9;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .head,.table__body td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #000000;
+  }
+  
+  .head {
+    background-color: #8DC6D3;
+    color: #ffffff;
+    }
+  

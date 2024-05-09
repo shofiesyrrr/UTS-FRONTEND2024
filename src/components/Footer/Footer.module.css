@@ -1,0 +1,75 @@
+/* Small Screen */
+
+.container {
+  background-color: #8dc6d3;
+  padding: 2rem;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__brand {
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer__linkedin {
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__author a:hover{
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer__instagram {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+.footer__item {
+  margin-bottom: 1rem;
+}
+
+.footer__socials a, .footer a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer__socials a:hover, .footer a:hover {
+  text-decoration: underline;
+
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__brand {
+    margin-bottom: 0;
+  }
+
+  .footer__list {
+    flex-direction: row;
+  }
+
+  .footer__item {
+    margin: 0 1rem;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+}
