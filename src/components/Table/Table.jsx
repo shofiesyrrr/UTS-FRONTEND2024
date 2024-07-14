@@ -1,16 +1,17 @@
 import React from "react";
 import styles from "./Table.module.css";
 import data from "../../utils/constants/provinces";
-import { nanoid } from "nanoid";
+import ProvinceItem from "./ProvinceItem";
 
-const Table = () => {
+
+const Table = ({provinces}) => {
   return (
     <div id="table" className={styles.container}>
-        <div className="tableheader">
-      <h1 className={styles.title}>Provinsi</h1>
-      <p className={styles.indonesia__subtitle}>
-        Data Covid Berdasarkan Indonesia
-      </p>
+      <div className="tableheader">
+        <h1 className={styles.title}>Provinsi</h1>
+        <p className={styles.indonesia__subtitle}>
+          Data Covid Berdasarkan Indonesia
+        </p>
       </div>
       <div className={styles.containerTable}>
         <table className={styles.table}>
@@ -24,14 +25,8 @@ const Table = () => {
             </tr>
           </thead>
           <tbody>
-            {data.provinces.map((province, idx) => (
-              <tr className={styles.table__body} key={nanoid(3)}>
-                <td>{idx + 1}</td>
-                <td>{province.kota}</td>
-                <td>{province.sembuh}</td>
-                <td>{province.dirawat}</td>
-                <td>{province.meninggal}</td>
-              </tr>
+            {provinces.map((province, idx) => (
+              <ProvinceItem province={province} idx={idx} />
             ))}
           </tbody>
         </table>
